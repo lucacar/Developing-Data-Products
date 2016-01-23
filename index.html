@@ -47,13 +47,14 @@
   <article data-timings="">
     <p>The present application is using a linear model with horsepower, number of cylinders, and weight as input parameter
 and uses the inputed values to predict the miles per gallon of a vehicle having such characteristics. Please, note that 
-inputed weight is converted dividing it by 1000 to comply with mtacars dataset requirements. The choice on cylinder number is likewise limited via radio button to the choices allowed by mtcars dataset (4, 6 or 8).</p>
+inputed weight is converted dividing it by 1000 to comply with mtcars dataset requirements. The choice on cylinder number is likewise limited via radio button to the choices allowed by mtcars dataset (4, 6 or 8).</p>
 
-<p>Part1: Shiny Application</p>
+<p>The choice of variable to use as input was determined by an earlier study on mtcars that identified them as most predictive 
+of MPG performances.</p>
 
 <ul>
 <li>URL: <a href="https://coursera-data-products.shinyapps.io/Developing-Data-Products-shiny-and-slidify--master/">https://coursera-data-products.shinyapps.io/Developing-Data-Products-shiny-and-slidify--master/</a> </li>
-<li>A shiny-App detailing the effect of horsepower, number of cylinders, and weight on miles per gallon of a vehicle. </li>
+<li>A shiny-App detailing the effect of horsepower, number of cylinders, and weight on a vehicle MPG. </li>
 </ul>
 
   </article>
@@ -65,9 +66,9 @@ inputed weight is converted dividing it by 1000 to comply with mtacars dataset r
     <h2>mtcars dataset - Description</h2>
   </hgroup>
   <article data-timings="">
-    <h3>Motor Trend magazine (Car Road Tests)</h3>
+    <h3>Data Source: Motor Trend magazine (Car Road Tests) - 1974</h3>
 
-<p>The data was extracted from the 1974 Motor Trend US magazine, and comprises fuel consumption and 10 aspects of automobile design and performance for 32 different automobiles (1973-74 models).</p>
+<p>The data used is part of mtcars dataset included in R-Studio and was originally extracted from the 1974 Motor Trend US magazine. It comprises fuel consumption and 10 aspects of automobile design and performance for 32 different automobiles (1973-74 models).</p>
 
 <pre><code class="r">library(datasets)
 head(mtcars, 3)

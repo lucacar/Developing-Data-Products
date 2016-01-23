@@ -13,12 +13,13 @@ knit        : slidify::knit2slides
 
 The present application is using a linear model with horsepower, number of cylinders, and weight as input parameter
 and uses the inputed values to predict the miles per gallon of a vehicle having such characteristics. Please, note that 
-inputed weight is converted dividing it by 1000 to comply with mtacars dataset requirements. The choice on cylinder number is likewise limited via radio button to the choices allowed by mtcars dataset (4, 6 or 8).
+inputed weight is converted dividing it by 1000 to comply with mtcars dataset requirements. The choice on cylinder number is likewise limited via radio button to the choices allowed by mtcars dataset (4, 6 or 8).
 
-Part1: Shiny Application
+The choice of variable to use as input was determined by an earlier study on mtcars that identified them as most predictive 
+of MPG performances.
 
 * URL: https://coursera-data-products.shinyapps.io/Developing-Data-Products-shiny-and-slidify--master/ 
-* A shiny-App detailing the effect of horsepower, number of cylinders, and weight on miles per gallon of a vehicle. 
+* A shiny-App detailing the effect of horsepower, number of cylinders, and weight on a vehicle MPG. 
 
 --- .class #id 
 
@@ -26,7 +27,7 @@ Part1: Shiny Application
 
 ### Data Source: Motor Trend magazine (Car Road Tests) - 1974
 
-The data was extracted from the 1974 Motor Trend US magazine, and comprises fuel consumption and 10 aspects of automobile design and performance for 32 different automobiles (1973-74 models).
+The data used is part of mtcars dataset included in R-Studio and was originally extracted from the 1974 Motor Trend US magazine. It comprises fuel consumption and 10 aspects of automobile design and performance for 32 different automobiles (1973-74 models).
 
 
 ```{r data}
@@ -61,7 +62,7 @@ with(mtcars, {
                        color=pcolor, pch=19,        # circle color indicates no. of cylinders
                        type="h", lty.hplot=2,       # lines to the horizontal plane
                        scale.y=.75,                 # scale y axis (reduce by 25%)
-                       main="3-D Scatterplot Example 4",
+                       main="3-D Scatterplot mtcars",
                        xlab="Horse power",
                        ylab="Weight (lb/1000)",
                        zlab="Miles/(US) Gallon")
